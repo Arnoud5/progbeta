@@ -17,3 +17,13 @@ for (const el of details) {
     }
   });
 }
+
+const navigationArea = document.getElementsByClassName('navigation-area')[0];
+const btnResponsive = document.getElementsByClassName('button-menu-responsive')[0];
+const toggleBtn = document.getElementById('toggleMenu');
+
+toggleBtn.addEventListener('click', () =>{
+  navigationArea.classList.toggle('navigation-area--open')
+  btnResponsive.classList.toggle('menu--open')
+})
+
